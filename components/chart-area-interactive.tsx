@@ -93,9 +93,10 @@ export function ChartAreaInteractive() {
         return
       }
 
+      // FIXED: Cast template literal to string to stop Supabase select complaining about null states
       const { data: allLeads, error: allError } = await supabase
         .from("leads")
-        .select(`${col}, status`)
+        .select(`${col}, status` as string)
 
       if (allError || !allLeads) {
         setLoading(false)
@@ -116,7 +117,9 @@ export function ChartAreaInteractive() {
         const date = parsedDate.toISOString().split("T")[0]
         if (!grouped[date]) grouped[date] = { total: 0, done: 0 }
         grouped[date].total++
-        if (lead.status === "Done") grouped[date].done++
+        
+        // FIXED: Safely read status string out of dynamic object lookup
+        if ((lead as Record<string, any>).status === "Done") grouped[date].done++
       }
 
       const rows: ChartRow[] = Object.entries(grouped)
