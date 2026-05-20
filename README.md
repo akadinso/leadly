@@ -3,8 +3,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 ## Login Details 
--[Email] - test@email.com
--[Password] - password123
+```bash
+Email - test@email.com
+Password - password123
+```
+
+
 First, run the development server:
 
 ```bash
