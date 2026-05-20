@@ -105,7 +105,8 @@ export function ChartAreaInteractive() {
       const grouped: Record<string, { total: number; done: number }> = {}
 
       for (const lead of allLeads) {
-        const raw = lead[col]
+        // FIXED: Cast lead to Record<string, any> so TS safely maps the dynamic col string lookup
+        const raw = (lead as Record<string, any>)[col]
         if (!raw) continue
         
         // Clean timestamp validation wrapper
