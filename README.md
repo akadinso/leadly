@@ -14,7 +14,7 @@ View the system architecture diagram here:
 
 [Open Excalidraw Diagram](https://excalidraw.com/#json=mnE3LGhNcwIp5v7IzY63k,2_MlqD6ErzuYsIYjCbQ5yg)
 
-<img width="5796" height="3531" alt="architecture" src="https://github.com/user-attachments/assets/0655a1c0-1902-45a2-bb03-f8d2f96dd983" />
+<img width="5796" height="3531" alt="image" src="https://github.com/user-attachments/assets/0b16e8df-80cf-4b8b-b8f0-c85c111fb6a3" />
 
 
 First, run the development server:
