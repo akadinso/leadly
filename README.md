@@ -8,6 +8,9 @@ Email - test@email.com
 Password - password123
 ```
 
+## System Architecture
+
+![System Architecture Image](https://excalidraw.com/#json=mnE3LGhNcwIp5v7IzY63k,2_MlqD6ErzuYsIYjCbQ5yg)
 
 First, run the development server:
 
